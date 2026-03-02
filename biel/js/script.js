@@ -176,8 +176,7 @@ if (contactForm && formMessage) {
     formMessage.textContent = 'Enviando...';
     formMessage.className = 'form-message';
 
-      emailjs.send("service_kpyi8yu","template_9m2gdwp", {
-
+    emailjs.send("service_kpyi8yu", "template_9m2gdwp", {
       name: name.value,
       email: email.value,
       phone: phone.value,

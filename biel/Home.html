@@ -3,34 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Arruda e seus amigos - Soluções digitais sob medida para pequenas e médias empresas. Desenvolvemos sistemas inteligentes para seu negócio crescer com organização e controle." />
+  <meta name="description" content="Trindade Tech - Soluções digitais sob medida para pequenas e médias empresas." />
   <meta name="keywords" content="sistemas, desenvolvimento, software, gestão, estoque, agendamentos" />
-  <meta name="author" content="Arruda e seus amigos" />
-  <title>Arruda e seus amigos | Soluções Digitais</title>
+  <meta name="author" content="Trindade Tech" />
+  <title>Trindade Tech | Soluções Digitais</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/home.css" />
-  
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="font-display bg-dark text-white antialiased">
+<body>
 
-  <!-- PRECARREGADOR -->
+  <!-- PRELOADER -->
   <div class="preloader">
     <div class="preloader-content">
-      <span class="material-symbols-outlined">hub</span>
-      <div class="preloader-text">Arruda e seus amigos</div>
+      <img class="preloader-logo" src="assets/logo.png" alt="Trindade Tech" onerror="this.style.display='none'" />
+      <div class="preloader-text">Trindade <span>Tech</span></div>
       <div class="preloader-bar">
         <div class="preloader-progress"></div>
       </div>
@@ -41,8 +40,8 @@
   <header class="header">
     <div class="container header-content">
       <div class="logo">
-        <span class="material-symbols-outlined">hub</span>
-        <strong>Arruda<span> e seus amigos</span></strong>
+        <img src="assets/logo.png" alt="Trindade Tech" onerror="this.style.display='none'" />
+        <strong>Trindade <span>Tech</span></strong>
       </div>
       <nav class="nav">
         <a href="#sobre">Sobre</a>
@@ -61,9 +60,27 @@
 
   <!-- HERO -->
   <section id="sobre" class="hero">
+    <div class="hero-bg"></div>
+
+    <svg class="hero-triangle" viewBox="0 0 500 433" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M250 10 L490 423 L10 423 Z" stroke="url(#tri1)" stroke-width="1.5" fill="none"/>
+      <path d="M250 60 L450 403 L50 403 Z" stroke="url(#tri2)" stroke-width="0.8" fill="none"/>
+      <defs>
+        <linearGradient id="tri1" x1="0" y1="0" x2="500" y2="433" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#5cdd3c"/>
+          <stop offset="50%" stop-color="#2d6bff"/>
+          <stop offset="100%" stop-color="#8b3de8"/>
+        </linearGradient>
+        <linearGradient id="tri2" x1="0" y1="433" x2="500" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#2d6bff"/>
+          <stop offset="100%" stop-color="#5cdd3c"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
     <div class="container hero-grid">
       <div class="hero-text" data-aos="fade-right">
-        <span class="badge">Soluções sob medida</span>
+        <div class="hero-badge">Soluções sob medida</div>
         <h1>
           Tecnologia que resolve<br />
           problemas reais do seu <span>negócio</span>
@@ -76,23 +93,26 @@
           <a href="#solucoes" class="btn primary">Ver soluções</a>
           <a href="#contato" class="btn outline">Falar com especialista</a>
         </div>
-        
+
         <div class="stats">
           <div class="stat-item">
             <span class="stat-number" data-target="150">0</span>
             <span class="stat-label">Clientes Atendidos</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-number blue" data-target="98">0</span>
             <span class="stat-label">% Satisfação</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-number purple" data-target="5">0</span>
             <span class="stat-label">Anos de Experiência</span>
           </div>
         </div>
       </div>
+
       <div class="hero-image" data-aos="fade-left">
+        <div class="corner-tl"></div>
+        <div class="corner-br"></div>
         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900" alt="Dashboard" />
         <div class="hero-image-overlay">
           <div class="tech-stack">
@@ -110,8 +130,9 @@
   <section id="solucoes" class="section dark">
     <div class="container">
       <header class="section-header" data-aos="fade-up">
-        <h2>O que fazemos</h2>
-        <p>Soluções digitais para diferentes tipos de negócio</p>
+        <div class="section-label">// O que fazemos</div>
+        <h2>Soluções Digitais</h2>
+        <p>Ferramentas inteligentes para diferentes tipos de negócio</p>
       </header>
 
       <div class="cards">
@@ -158,37 +179,35 @@
   <section class="section">
     <div class="container">
       <header class="section-header" data-aos="fade-up">
+        <div class="section-label">// Como trabalhamos</div>
         <h2>Nosso Processo</h2>
         <p>Como transformamos sua ideia em uma solução funcional</p>
       </header>
 
       <div class="process-timeline">
         <div class="process-step" data-aos="fade-right" data-aos-delay="100">
-          <div class="step-number">1</div>
+          <div class="step-number">01</div>
           <div class="step-content">
             <h3>Descoberta</h3>
             <p>Analisamos suas necessidades e desafios de negócio para entender completamente o problema.</p>
           </div>
         </div>
-
         <div class="process-step" data-aos="fade-right" data-aos-delay="200">
-          <div class="step-number">2</div>
+          <div class="step-number">02</div>
           <div class="step-content">
             <h3>Planejamento</h3>
             <p>Desenvolvemos um plano detalhado com todas as funcionalidades e o cronograma do projeto.</p>
           </div>
         </div>
-
         <div class="process-step" data-aos="fade-right" data-aos-delay="300">
-          <div class="step-number">3</div>
+          <div class="step-number">03</div>
           <div class="step-content">
             <h3>Desenvolvimento</h3>
             <p>Nossa equipe implementa a solução com metodologias ágeis e entregas incrementais.</p>
           </div>
         </div>
-
         <div class="process-step" data-aos="fade-right" data-aos-delay="400">
-          <div class="step-number">4</div>
+          <div class="step-number">04</div>
           <div class="step-content">
             <h3>Entrega e Suporte</h3>
             <p>Após a implantação, oferecemos treinamento e suporte contínuo para garantir o sucesso.</p>
@@ -202,12 +221,13 @@
   <section id="clientes" class="section dark">
     <div class="container grid-2">
       <div data-aos="fade-right">
+        <div class="section-label">// Segmentos</div>
         <h2>Atendemos diversos segmentos</h2>
         <ul>
-          <li>✔ Barbearias e clínicas</li>
-          <li>✔ Restaurantes</li>
-          <li>✔ Comércios</li>
-          <li>✔ Prestadores de serviço</li>
+          <li>Barbearias e clínicas</li>
+          <li>Restaurantes</li>
+          <li>Comércios em geral</li>
+          <li>Prestadores de serviço</li>
         </ul>
         <a href="#contato" class="btn primary mt-4">Solicitar proposta</a>
       </div>
@@ -221,17 +241,18 @@
   <section id="depoimentos" class="section">
     <div class="container">
       <header class="section-header" data-aos="fade-up">
+        <div class="section-label">// Depoimentos</div>
         <h2>O que nossos clientes dizem</h2>
-        <p>Depoimentos reais de quem já transformou o negócio com a gente</p>
+        <p>Histórias reais de quem transformou o negócio com a Trindade Tech</p>
       </header>
 
       <div class="testimonials-container">
         <div class="testimonial active" data-aos="zoom-in" data-aos-delay="100">
           <div class="testimonial-content">
-            <p>"O sistema de agendamentos da Arruda e seus amigos revolucionou nossa clínica. Reduzimos as faltas em 40% e otimizamos o tempo da equipe."</p>
+            <p>"O sistema de agendamentos da Trindade Tech revolucionou nossa clínica. Reduzimos as faltas em 40% e otimizamos o tempo da equipe."</p>
           </div>
           <div class="testimonial-author">
-            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" />
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Silva" />
             <div>
               <h4>Maria Silva</h4>
               <span>Clínica Estética Beleza Pura</span>
@@ -241,10 +262,10 @@
 
         <div class="testimonial" data-aos="zoom-in" data-aos-delay="200">
           <div class="testimonial-content">
-            <p>"Finalmente conseguimos controlar nosso estoque em tempo real. O sistema da Arruda e seus amigos pagou-se em menos de 3 meses."</p>
+            <p>"Finalmente conseguimos controlar nosso estoque em tempo real. O sistema da Trindade Tech pagou-se em menos de 3 meses."</p>
           </div>
           <div class="testimonial-author">
-            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Cliente" />
+            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="João Santos" />
             <div>
               <h4>João Santos</h4>
               <span>Distribuidora Alimentos Ltda</span>
@@ -254,10 +275,10 @@
 
         <div class="testimonial" data-aos="zoom-in" data-aos-delay="300">
           <div class="testimonial-content">
-            <p>"O sistema de pedidos integrado com delivery aumentou nossas vendas em 35%. Equipe da Arruda e seus amigos é extremamente profissional."</p>
+            <p>"O sistema de pedidos integrado com delivery aumentou nossas vendas em 35%. Equipe da Trindade Tech é extremamente profissional."</p>
           </div>
           <div class="testimonial-author">
-            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Cliente" />
+            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Carlos Oliveira" />
             <div>
               <h4>Carlos Oliveira</h4>
               <span>Restaurante Sabor & Arte</span>
@@ -278,6 +299,7 @@
   <section id="contato" class="section dark">
     <div class="container">
       <header class="section-header" data-aos="fade-up">
+        <div class="section-label">// Contato</div>
         <h2>Entre em contato</h2>
         <p>Envie sua mensagem e retornaremos em até 24 horas</p>
       </header>
@@ -296,7 +318,7 @@
             <span class="material-symbols-outlined">mail</span>
             <div>
               <h4>E-mail</h4>
-              <p>contato@arrudaeus amigos.com.br</p>
+              <p>trindadetech01@gmail.com</p>
             </div>
           </div>
           <div class="contact-item">
@@ -349,10 +371,20 @@
 
   <!-- CHAMADA PARA AÇÃO -->
   <section class="cta">
+    <svg class="cta-triangle" viewBox="0 0 500 433" fill="none">
+      <path d="M250 10 L490 423 L10 423 Z" stroke="url(#ctaTri)" stroke-width="1.5" fill="none"/>
+      <defs>
+        <linearGradient id="ctaTri" x1="0" y1="0" x2="500" y2="433" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#5cdd3c"/>
+          <stop offset="50%" stop-color="#2d6bff"/>
+          <stop offset="100%" stop-color="#8b3de8"/>
+        </linearGradient>
+      </defs>
+    </svg>
     <div class="container" data-aos="zoom-in">
       <h2>Vamos resolver o problema da sua empresa?</h2>
       <p>Fale com um especialista agora mesmo.</p>
-      <a href="https://wa.me/5511985364228" target="_blank" class="btn white">
+      <a href="https://wa.me/5511945825009" target="_blank" class="btn white">
         <span class="material-symbols-outlined">whatsapp</span>
         Falar no WhatsApp
       </a>
@@ -363,8 +395,8 @@
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-logo">
-        <span class="material-symbols-outlined">hub</span>
-        <strong>Arruda <span> e seus amigos</span></strong>
+        <img src="assets/logo.png" alt="Trindade Tech" onerror="this.style.display='none'" />
+        <strong>Trindade <span>Tech</span></strong>
       </div>
       <div class="footer-links">
         <div class="footer-column">
@@ -389,14 +421,14 @@
           <h4>Contato</h4>
           <ul>
             <li>(11) 94582-5009</li>
-            <li>contato@arrudaeusamigos.com.br</li>
+            <li>trindadetech01@gmail.com</li>
             <li>Seg-Sex: 8h às 18h</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Arruda e seus amigos — Soluções Digitais. Todos os direitos reservados.</p>
+      <p>© 2026 Trindade Tech — Soluções Digitais. Todos os direitos reservados.</p>
     </div>
   </footer>
 
@@ -405,13 +437,11 @@
     <span class="material-symbols-outlined">keyboard_arrow_up</span>
   </button>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-  emailjs.init("UBn3Jhs6MHzKqVDXd");
-</script>
-<script src="js/script.js"></script>
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>emailjs.init("UBn3Jhs6MHzKqVDXd");</script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
